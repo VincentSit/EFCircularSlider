@@ -158,7 +158,7 @@
         CGContextDrawPath(ctx, kCGPathStroke);
     } else if(_handleType == EFBigCircle) {
         [_handleColor set];
-        CGContextFillEllipseInRect(ctx, CGRectMake(handleCenter.x-2.5, handleCenter.y-2.5, _lineWidth+5, _lineWidth+5));
+        CGContextFillEllipseInRect(ctx, CGRectMake(handleCenter.x-7.5, handleCenter.y-7.5, _lineWidth+15, _lineWidth+15));
     }
     
     CGContextRestoreGState(ctx);
