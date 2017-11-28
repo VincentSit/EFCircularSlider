@@ -34,7 +34,7 @@ typedef NS_ENUM(NSInteger, EFHandleType) {
 @property (nonatomic, strong) UIColor* labelColor;
 @property (nonatomic, assign) NSInteger labelDisplacement;
 @property (nonatomic) BOOL snapToLabels;
-
+@property (nonatomic, copy) void(^valueDidManuallyChangedHandler)(int value);
 
 
 -(void)setInnerMarkingLabels:(NSArray*)labels;
