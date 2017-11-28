@@ -249,6 +249,8 @@
         _currentValue = [self valueFromAngle];
         [self setNeedsDisplay];
     }
+    
+    !self.valueDidManuallyChangedHandler ?: self.valueDidManuallyChangedHandler((int)_currentValue);
 }
 
 -(void)moveHandle:(CGPoint)point {
